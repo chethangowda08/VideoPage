@@ -54,20 +54,20 @@ class _VideoPageDemoState extends State<VideoPageDemo>
     );
   }
 
-  forwardVideo(){
-    int currentPosition= 0;
-    if(currentPosition>=120){
-      return ;
-    }
-    _controller.seekTo(Duration(seconds: currentPosition+10));
-  }
-  rewindVideo(){
-    int currentPosition =0 ;
-    if(currentPosition>=120||currentPosition<=10){
-      return;
-    }
-    _controller.seekTo(Duration(seconds: currentPosition-10));
-  }
+  // forwardVideo(){
+  //   int currentPosition= 0;
+  //   if(currentPosition>=120){
+  //     return ;
+  //   }
+  //   _controller.seekTo(Duration(seconds: currentPosition+10));
+  // }
+  // rewindVideo(){
+  //   int currentPosition =0 ;
+  //   if(currentPosition>=120||currentPosition<=10){
+  //     return;
+  //   }
+  //   _controller.seekTo(Duration(seconds: currentPosition-10));
+  // }
 
 
   @override
@@ -129,8 +129,7 @@ class _VideoPageDemoState extends State<VideoPageDemo>
 
   @override
   void onPlayerSeekTo(Duration position) {
-    // forwardVideo();
-    // rewindVideo();
+
   }
 
   @override
